@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@800&display=swap');
 html {
-    background: #000;
+    background: #222;
+    font-size: 1.2em;
 }
 
 body {
-    background: #222;
+    background: #333;
     font-family: monospace;
     color: #ddd;
-    width: 400px;
+    width: 600px;
     outline: 1px solid #555;
     margin: auto auto;
     padding: 20px;
@@ -16,6 +17,7 @@ body {
 
 logo {
     font-family: 'MuseoModerno', cursive;
+    color: rgb(214, 139, 0);
     font-size: 2em;
     display: block;
     border-bottom: 1px solid #555;
@@ -33,4 +35,18 @@ widget title {
 
 widget content {
     display: block;
+}
+
+a {
+    color: rgb(214, 139, 0);
+    text-decoration: none;
+}
+
+a:hover {
+    transition: all 500ms;
+    text-decoration: underline;
+}
+
+a:active {
+    color: rgb(138, 90, 0);
 }
