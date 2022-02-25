@@ -122,6 +122,13 @@ a:active {
 
 table {
     border-collapse: collapse;
+    font-size: inherit;
+    font-style: inherit;
+    font-family: inherit;
+    color: inherit;
+    font-variant: inherit;
+    font-weight: inherit;
+    line-height: inherit;
 }
 
 table thead tr th,
