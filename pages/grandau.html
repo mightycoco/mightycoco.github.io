@@ -1,0 +1,154 @@
+<title>(GRANDAU6)</title>
+
+<purpose>
+    Active two channel, 6 way multiple expandable in master/slave configuration via pack-panel connection.
+</purpose>
+
+<description>
+    <img src="static/grandau6/grandau6.png" class="clickable"/>
+    <p>GRANDAU6 is an active multipe with two channels in 4HE which can work stand alone or connected 
+    together via a 4Pin Dupont/JST connector on the back.</p>
+    
+    <p>When connected on the back you can route an input signal on channel A or B to the second module on the other 
+        end of your case. I.e. plug clock and reset from your sequencer in channels A & B and multiply to your desired 
+        modules. The second GRANDAU6 at the other end of your rack will receive the same clock and reset signals and
+        multiply them further to other modules.</p>
+    <p>Multiple use-cases require setting jumpers on the back.</p>
+
+    <subtitle>Standalone without normalization</subtitle>
+    <p>Jumper settings:</p>
+    <table>
+        <tr>
+            <td>Jumper</td>
+            <td>Setting</td>
+            <td rowspan="4"><img src="static/grandau6/standalone_nonorm.png" class="clickable"/></td>
+        </tr>
+        <tr>
+            <td>NORM</td>
+            <td><span class="cancel"/></td>
+        </tr>
+        <tr>
+            <td>IN (P2) Left</td>
+            <td><span class="ok"/></td>
+        </tr>
+        <tr>
+            <td>IN (P2) Right</td>
+            <td><span class="ok"/></td>
+        </tr>
+    </table>
+
+    <subtitle>Standalone with normalization</subtitle>
+    <p>Jumper settings:</p>
+    <table>
+        <tr>
+            <td>Jumper</td>
+            <td>Setting</td>
+            <td rowspan="4"><img src="static/grandau6/standalone_norm.png" class="clickable"/></td>
+        </tr>
+        <tr>
+            <td>NORM</td>
+            <td><span class="ok"/></td>
+        </tr>
+        <tr>
+            <td>IN (P2) Left</td>
+            <td><span class="ok"/></td>
+        </tr>
+        <tr>
+            <td>IN (P2) Right</td>
+            <td><span class="cancel"/></td>
+        </tr>
+    </table>
+
+    <subtitle>Expansion without normalization</subtitle>
+    <p>This requires one module as a Master module. On the second module the inputs for channel A & B must not be 
+    patched or the signals from the Master module and the signal pathed in on the slave module are mixed (but there
+    is no reason, not doing so if that's what you want).</p>
+    
+    <p>Jumper settings (MASTER Module):</p>
+    <table>
+        <tr>
+            <td>Jumper</td>
+            <td>Setting</td>
+            <td rowspan="4"><img src="static/grandau6/master_nonorm.png" class="clickable"/></td>
+        </tr>
+        <tr>
+            <td>NORM</td>
+            <td><span class="cancel"/></td>
+        </tr>
+        <tr>
+            <td>IN (P2) Left</td>
+            <td><span class="ok"/></td>
+        </tr>
+        <tr>
+            <td>IN (P2) Right</td>
+            <td><span class="ok"/></td>
+        </tr>
+    </table>
+
+    <p>Jumper settings (SLAVE Module):</p>
+    <table>
+        <tr>
+            <td>Jumper</td>
+            <td>Setting</td>
+            <td rowspan="4"><img src="static/grandau6/slave_nonorm.png" class="clickable"/></td>
+        </tr>
+        <tr>
+            <td>NORM</td>
+            <td><span class="cancel"/></td>
+        </tr>
+        <tr>
+            <td>IN (P2) Left</td>
+            <td><span class="cancel"/></td>
+        </tr>
+        <tr>
+            <td>IN (P2) Right</td>
+            <td><span class="cancel"/></td>
+        </tr>
+    </table>
+
+    <subtitle>Expansion with normalization</subtitle>
+    <p>This requires one module as a Master module. On the second module the inputs for channel A & B must not be 
+    patched or the signals from the Master module and the signal pathed in on the slave module are mixed.</p>
+    
+    <p>Jumper settings (MASTER Module):</p>
+    <table>
+        <tr>
+            <td>Jumper</td>
+            <td>Setting</td>
+            <td rowspan="4"><img src="static/grandau6/master_norm.png" class="clickable"/></td>
+        </tr>
+        <tr>
+            <td>NORM</td>
+            <td><span class="ok"/></td>
+        </tr>
+        <tr>
+            <td>IN (P2) Left</td>
+            <td><span class="ok"/></td>
+        </tr>
+        <tr>
+            <td>IN (P2) Right</td>
+            <td><span class="cancel"/></td>
+        </tr>
+    </table>
+
+    <p>Jumper settings (SLAVE Module):</p>
+    <table>
+        <tr>
+            <td>Jumper</td>
+            <td>Setting</td>
+            <td rowspan="4"><img src="static/grandau6/slave_norm.png" class="clickable"/></td>
+        </tr>
+        <tr>
+            <td>NORM</td>
+            <td><span class="cancel"/></td>
+        </tr>
+        <tr>
+            <td>IN (P2) Left</td>
+            <td><span class="cancel"/></td>
+        </tr>
+        <tr>
+            <td>IN (P2) Right</td>
+            <td><span class="cancel"/></td>
+        </tr>
+    </table>
+</description>
