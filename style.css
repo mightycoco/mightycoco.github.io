@@ -140,3 +140,8 @@ img.clickable {
 img.clickable.active {
     transform: scale(2);
 }
+
+img.module {
+    float:right;
+    width: 120px;
+}
