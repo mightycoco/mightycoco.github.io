@@ -40,6 +40,8 @@ nav {
 nav a {
     display: block;
     padding: 5px;
+    margin: 5px;
+    width: 200px;
     text-decoration: none !important;
 }
 
@@ -51,6 +53,7 @@ nav a:hover {
 nav a.active {
     outline: 1px solid #999;
     background: #666;
+    color: #000;
 }
 
 page {
@@ -75,6 +78,12 @@ subtitle {
     margin-top: 2em;
     margin-bottom: 1em;
     padding: 0.5em;
+}
+
+alt {
+    font-family: 'swishbuttonsnf';
+    color: rgb(214, 139, 0);
+    font-size: 0.8em;
 }
 
 .hidden {
@@ -138,6 +147,18 @@ table tbody tr td {
     border: 1px solid #ddd;
     border-collapse: collapse;
 }
+table tbody tr td[left] {
+    text-align:left;
+}
+table tbody tr td[top] {
+    vertical-align:top;
+}
+
+dt {
+    list-style: inside;
+    list-style-type: disclosure-closed;
+    display: list-item;
+}
 
 img.clickable {
     width: 250px;
@@ -151,4 +172,10 @@ img.clickable.active {
 img.module {
     float:right;
     width: 120px;
+}
+
+license {
+    font-size: 0.8em;
+    white-space: pre;
+    font-family: monospace;
 }
