@@ -176,6 +176,6 @@ img.module {
 
 license {
     font-size: 0.8em;
-    white-space: pre;
+    white-space: pre-line;
     font-family: monospace;
 }
