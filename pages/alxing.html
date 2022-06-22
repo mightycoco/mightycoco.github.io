@@ -154,8 +154,41 @@
     </table>-->
 
     <br /><br />
-    <a href="static/dl/alxing.1.8.17-05-2022.zip">Firmware 1.8.17-05-2022 HW rev 2.2</a>
+    <a href="static/dl/alxing.1.9.22-06-2022.zip">Firmware 1.9.22-06-2022 HW rev 2.2</a>
     <br/>
+    <releasenotes>
+        alxing 1.9
+        - Improve clock timings
+        - add new division modes
+        1/8, 1/4, 1/3, 1/2, 1/1, 2/1, 3/1, 4/1, 8/1
+        - harden GPIO driver strength to be able to up to 7mAh
+        - changes in DAC mode require tuning of the spread using PCB trimmer T1 (blue trimmer on back of the module)
+        - Add calibration modes (auto, manual)
+
+        alxing.1.1.10082021
+        - Improve clock resolution to 96 PPQN (Pulse Per Quarter Node)
+        - Fix ping pong steps
+        - Implement trigger base on division
+
+        alxing.1.1.04262021
+        - Introduce playmode (forward/backward/ping pong/drunk/random)
+        - Fix density assignment
+        - Fetchable properties only get set when the sequence resets
+            - New infrastructure to fetch retained values
+            - Make root (base) value fetchable
+            - Make variation value fetchable
+        - Improve random seed
+        - Range BPM from 10 to 320 by 5 steps
+
+        1.1.140121
+        - Adding storage of sequences
+        - CV/Clock settings are persisted
+        - New CV setting zo switch between fine and coarse
+            - fine allows 1V/Oct via CV
+            - coarse allows 4V/Oct for manual use via POT
+        - Fixing menu button to not require a double clock to work
+        - Fix long press button to not open the settings menu
+    </releasenotes>
     <license>
 <h1>licenses</h1>
 <h2>alxing</h2>

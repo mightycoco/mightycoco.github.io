@@ -179,3 +179,8 @@ license {
     white-space: pre-line;
     font-family: monospace;
 }
+
+releasenotes {
+    white-space: pre-line;
+    font-size: 0.9em;
+}
